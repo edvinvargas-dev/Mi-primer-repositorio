@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto Formularios</title>
+</head>
+<body>
+    <h1>Formularios en HTML</h1>
+    <fieldset style="width: max-content;" >
+        <legend style="font-weight: bolder;">Datos Personales</legend>
+        <label for="nombre" >Nombre:
+            <input type="text" placeholder="Ingresa tu nombre">
+        </label>
+        <br>
+        <label for="email">Correo Electrónico:
+            <input type="email" required placeholder="Tucorreo@ejemplo.com">
+        </label>
+        <br>
+        <label for="">Teléfono:
+            <input type="tel" required placeholder="Ingresa tu teléfono">
+        </label>
+    </fieldset>
+    <br>
+    <fieldset style="width: max-content;">
+        <legend style="font-weight: bolder;">Genero</legend>
+        <input type="radio" name="Lista" id="Masculino">
+        <label for="Masculino">Masculino</label>
+        <br>
+        <input type="radio" name="Lista" id="Femenino">
+        <label for="Femenino">Femenino</label>
+        <br>
+        <input type="radio" name="Lista" id="Otro">
+        <label for="Otro">Otro</label>
+    </fieldset>
+    <br>
+    <fieldset style="width: max-content;">
+        <legend style="font-weight: bolder;">Preferencias</legend>
+        <input type="checkbox" name="Lista" id="Musica">
+        <label for="Musica">Musica</label>
+        <br>
+        <input type="checkbox" name="Lista" id="Deportes">
+        <label for="Deportes">Deportes</label>
+        <br>
+        <input type="checkbox" name="Lista" id="Lectura">
+        <label for="Lectura">Lectura</label>
+
+
+    </fieldset>
+    <h2>Comentarios</h2>
+    <textarea name="Comentarios" id="comentarios" cols="30" rows="10"></textarea>
+    <br>
+    <button>Enviar</button>
+
+</body>
+</html>

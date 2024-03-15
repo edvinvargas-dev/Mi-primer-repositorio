@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodo Pomodoro</title>
+    <link rel="shortcut icon" href="imagen/iconPomodoro.jpg">
+    <link rel="stylesheet" href="misEstilos.css">
+    <script src="misScripts.js"></script>
+</head>
+<body align="CENTER" onload="IniciarTiempo()">
+    <audio src="GameOver.mp3.mpeg" type="audio/mpeg" id="audio">audio no habilitado</audio>
+    <h1 id="tituloCentral"><CENTER>METODO POMODORO</CENTER></h1>
+    <span id="reloj"></span>
+    
+<br>
+    <div id="inpbutton">
+        <input type="text" id="tareaDigitada">
+        <button onclick="agregarTarea()">AGREGAR TAREA</button>
+        
+    </div>
+    <div class="balls">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <br><br>
+      <span id="textoaReemplazar"></span>
+      
+
+    
+</body>
+</html>

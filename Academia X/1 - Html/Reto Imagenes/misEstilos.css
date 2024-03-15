@@ -1,0 +1,23 @@
+.Title1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.imagenIntroduccion {
+    display:flex;
+    
+}
+img {
+    width: 300px;
+    margin-right: 100px;
+    max-width: 100%;
+    width: 400px; /* Ajusta el ancho a tu preferencia */
+    height: 400px; /* Ajusta la altura a tu preferencia */
+    object-fit: cover; 
+}
+
+.textoFinal{
+    text-align: center;
+    font-weight: bolder;
+    font-size: x-large;
+}

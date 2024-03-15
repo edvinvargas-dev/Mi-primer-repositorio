@@ -1,0 +1,104 @@
+body{
+    background-color: cadetblue;
+}
+
+#tituloCentral {
+    color: aliceblue;
+    border: 2px solid rgb(44, 39, 39); /* Puedes ajustar el ancho y el color del borde según tus preferencias */
+    padding: 10px; /* Agregamos relleno para dar espacio entre el texto y el borde */
+    text-align: center; /* Centramos el texto en el título */
+}
+#inpbutton{
+    text-align: center;
+    padding: 20px;
+    cursor:progress;
+}
+input{
+    width: 500px;
+    padding: 8px;
+}
+button {
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background-color: hsl(236, 32%, 26%);
+  }
+  
+  button::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fc2f70;
+    transform-origin: center left;
+    transform: scaleX(0);
+    transition: transform 0.25s ease-in-out;
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
+  
+  button:hover::before {
+    transform-origin: center right;
+    transform: scaleX(1);
+  }
+  .balls {
+    padding-inline-start: 48%;
+    width: 4em;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .balls div {
+    width: 0.8em;
+    height: 0.8em;
+    border-radius: 50%;
+    background-color: #fc2f70;
+  }
+  
+  .balls div:nth-of-type(1) {
+    transform: translateX(-100%);
+    animation: left-swing 0.5s ease-in alternate infinite;
+  }
+  
+  .balls div:nth-of-type(3) {
+    transform: translateX(-95%);
+    animation: right-swing 0.5s ease-out alternate infinite;
+  }
+  
+  @keyframes left-swing {
+    50%,
+    100% {
+      transform: translateX(95%);
+    }
+  }
+  
+  @keyframes right-swing {
+    50% {
+      transform: translateX(-95%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  ul{
+    padding-inline-start:center;
+    background-color: bisque;
+    margin-right: 25%;
+    margin-left: 25%;
+    font-size: xx-large;
+  }
+  
+  
